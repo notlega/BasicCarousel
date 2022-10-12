@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato");
+
+:root {
+	--max-width: 37.5rem;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: var(--max-width);
+	font-family: "Lato", sans-serif;
+	margin: 0 auto;
+	padding: 0 1.25rem;
+}
+
+.carousel {
+	width: var(--max-width);
+	height: 50vh;
+	position: relative;
+}
+
+.carousel > ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.carousel__slide {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	transition: 200ms opacity ease-in-out;
+	transition-delay: 200ms;
+}
+
+.carousel__slide > img {
+	display: block;
+	width: var(--max-width);
+	height: min-content;
+	object-fit: cover;
+	object-position: center;
+}
+
+.carousel__slide[data-active] {
+	opacity: 1;
+	z-index: 1;
+	transition-delay: 0ms;
+}
+
+.carousel__button {
+	position: absolute;
+	z-index: 2;
+	background: none;
+	border: none;
+	font-size: 4rem;
+	top: 50%;
+	transform: translateY(-50%);
+	color: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	border-radius: 0.25rem;
+	padding: 0 0.5rem;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.carousel__button:hover,
+.carousel__button:focus {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel__button:focus {
+	outline: 1px solid black;
+}
+
+.carousel__button.prev {
+	left: 1rem;
+}
+
+.carousel__button.next {
+	right: 1rem;
+}
