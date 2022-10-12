@@ -37,8 +37,11 @@ body {
 
 .carousel__slide > img {
 	display: block;
-	width: var(--max-width);
-	height: min-content;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: var(--max-width);
+	height: auto;
 	object-fit: cover;
 	object-position: center;
 }
@@ -54,8 +57,8 @@ body {
 	z-index: 2;
 	background: none;
 	border: none;
-	font-size: 4rem;
-	top: 50%;
+	font-size: 3rem;
+	top: 48%;
 	transform: translateY(-50%);
 	color: rgba(255, 255, 255, 0.5);
 	cursor: pointer;
@@ -69,10 +72,6 @@ body {
 .carousel__button:focus {
 	color: white;
 	background-color: rgba(0, 0, 0, 0.2);
-}
-
-.carousel__button:focus {
-	outline: 1px solid black;
 }
 
 .carousel__button.prev {
