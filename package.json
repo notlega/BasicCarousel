@@ -1,11 +1,19 @@
 {
-  "name": "carousel",
+  "name": "basiccarousel",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A basic HTML Carousel made using pure HTML, JS and CSS.",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "start index.html"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notlega/BasicCarousel.git"
+  },
+  "author": "onghinjourn@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notlega/BasicCarousel/issues"
+  },
+  "homepage": "https://github.com/notlega/BasicCarousel#readme"
 }
